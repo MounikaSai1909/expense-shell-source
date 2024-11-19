@@ -42,7 +42,7 @@ VALIDATE $? "Extracted backend code"
 npm install &>>$LOGFILE
 VALIDATE $? "Installing node js dependecies"
 
-cp /home/ec2-user/expense-shell-swamy/backend.service /etc/systemd/system/backend.service
+cp /home/ec2-user/expense-shell-source/backend.service /etc/systemd/system/backend.service
 VALIDATE $? "copied backend service"
 
 systemctl daemon-reload &>>$LOGFILE
