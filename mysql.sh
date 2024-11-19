@@ -1,9 +1,10 @@
 #!/bin/bash
 
 source ./common.sh
-check_user()
 
-echo "please enter DB password"
+check_user
+
+echo " please enter DB password "
 read -s mysql_root_password
 
 dnf install mysql-server -y &>>$LOGFILE
